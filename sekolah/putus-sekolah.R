@@ -6,6 +6,10 @@ library(extrafont)
 
 df <- read.csv("~/visualisasi-mingguan/sekolah/number-of-out-of-school-children.csv")
 
+
+# Data wrangling ----------------------------------------------------------
+
+
 df_idn <- df %>% 
   filter(Entity == "Indonesia") %>% #filter data dari indonesia 
   drop_na() %>% #filter data no value
@@ -29,6 +33,12 @@ df_idn$lab <- factor(
     "SMA, perempuan",
     "SMA, laki-laki"
   ))
+
+
+
+# Making Labs  ------------------------------------------------------------
+
+
 
 final1 <-  df_idn %>% 
   filter(Year == "2014") %>% 
