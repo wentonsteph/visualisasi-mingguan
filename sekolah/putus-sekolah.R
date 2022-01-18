@@ -35,9 +35,7 @@ df_idn$lab <- factor(
   ))
 
 
-
 # Making Labs  ------------------------------------------------------------
-
 
 
 final1 <-  df_idn %>% 
@@ -61,10 +59,7 @@ df_idn <- df_idn %>%
     ))
 
 
-
 # Plot --------------------------------------------------------------------
-
-
 
 
 finalplot <-  ggplot(df_idn, aes(x = Year, y = count, fill = lab)) +
